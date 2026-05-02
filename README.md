@@ -93,8 +93,7 @@ python cliente.py
 Hashear contraseñas es fundamental para proteger los datos de los usuarios. 
 Si la base de datos es comprometida por un atacante, las contraseñas hasheadas 
 no pueden ser leídas en texto plano. bcrypt agrega además un "salt" aleatorio 
-a cada contraseña, lo que hace que dos contraseñas iguales tengan hashes diferentes,
-dificultando los ataques de fuerza bruta.
+a cada contraseña, lo que hace que dos contraseñas iguales tengan hashes diferentes.
 
 ### Ventajas de usar SQLite en este proyecto
 - **Simple:** No requiere instalar un servidor de base de datos separado.
