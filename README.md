@@ -86,3 +86,19 @@ python cliente.py
 
 ### Cliente
 ![Cliente](capturas/cliente.png)
+
+## Respuestas Conceptuales
+
+### ¿Por qué hashear contraseñas?
+Hashear contraseñas es fundamental para proteger los datos de los usuarios. 
+Si la base de datos es comprometida por un atacante, las contraseñas hasheadas 
+no pueden ser leídas en texto plano. bcrypt agrega además un "salt" aleatorio 
+a cada contraseña, lo que hace que dos contraseñas iguales tengan hashes diferentes,
+dificultando los ataques de fuerza bruta.
+
+### Ventajas de usar SQLite en este proyecto
+- **Simple:** No requiere instalar un servidor de base de datos separado.
+- **Portable:** La base de datos es un único archivo (tareas.db) fácil de mover o compartir.
+- **Integrado en Python:** No necesita instalación extra, viene incluido con Python.
+- **Suficiente para proyectos chicos:** Para una aplicación de este tipo, SQLite 
+es más que suficiente sin necesidad de usar bases de datos más complejas como MySQL o PostgreSQL.
